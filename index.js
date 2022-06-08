@@ -14,7 +14,7 @@ getName();
 //declare age
 let age;
 function runGetAge() {
-  //get visitors name from prompt
+  //get visitors age from prompt
   function getAge() {
     age = prompt("Please Input your age");
   }
@@ -79,7 +79,7 @@ function runGetAge() {
   }
 }
 
-//confirm that the age prompt is not left empty or filled with a number
+//confirm that the name prompt is not left empty or filled with a number
 if (visitorsName === null) {
   alert("You Cancelled!!");
 }
