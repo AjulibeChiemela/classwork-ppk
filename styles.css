@@ -180,7 +180,7 @@ main .hero .float.v-2 {
 .tkt-body #ticket h3 {
   font-size: 3rem;
   text-align: center;
-  margin-top: 3%;
+  margin-top: 2%;
 }
 
 .tkt-body #ticket .tkt-div {
@@ -193,7 +193,7 @@ main .hero .float.v-2 {
   border-radius: 15px;
   padding: 2%;
   width: 70%;
-  margin: 3% auto 1%;
+  margin: 2% auto;
 }
 
 .tkt-body #ticket .tkt-div .tkt-text {
@@ -204,5 +204,11 @@ main .hero .float.v-2 {
   font-size: 2.5rem;
   font-weight: 400;
   margin-block: 5%;
+}
+
+.tkt-body #ticket .print-tkt {
+  padding: 1%;
+  position: relative;
+  left: 45%;
 }
 /*# sourceMappingURL=styles.css.map */

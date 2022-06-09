@@ -136,7 +136,7 @@ main {
     h3 {
       font-size: 3rem;
       text-align: center;
-      margin-top: 3%;
+      margin-top: 2%;
     }
     .tkt-div {
       display: flex;
@@ -145,7 +145,7 @@ main {
       border-radius: 15px;
       padding: 2%;
       width: 70%;
-      margin: 3% auto 1%;
+      margin: 2% auto;
       .tkt-text {
         padding-top: 5%;
         p {
@@ -154,6 +154,11 @@ main {
           margin-block: 5%;
         }
       }
+    }
+    .print-tkt {
+      padding: 1%;
+      position: relative;
+      left: 45%;
     }
   }
 }
