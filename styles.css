@@ -123,7 +123,7 @@ main .hero .float.v-2 {
 
 .tkt-body {
   background-repeat: repeat;
-  padding: 2% 3%;
+  padding: 1% 3%;
 }
 
 .tkt-body a {
@@ -174,6 +174,16 @@ main .hero .float.v-2 {
 
 .tkt-body #ticket {
   font-family: "Creepster", cursive;
+  display: none;
+}
+
+.tkt-body #ticket h3 {
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 3%;
+}
+
+.tkt-body #ticket .tkt-div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -183,16 +193,16 @@ main .hero .float.v-2 {
   border-radius: 15px;
   padding: 2%;
   width: 70%;
-  margin: 5% auto;
+  margin: 3% auto 1%;
 }
 
-.tkt-body #ticket .tkt-text {
+.tkt-body #ticket .tkt-div .tkt-text {
   padding-top: 5%;
 }
 
-.tkt-body #ticket .tkt-text p {
+.tkt-body #ticket .tkt-div .tkt-text p {
   font-size: 2.5rem;
   font-weight: 400;
-  margin-block: 20%;
+  margin-block: 5%;
 }
 /*# sourceMappingURL=styles.css.map */
