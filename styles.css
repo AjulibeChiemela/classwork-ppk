@@ -8,6 +8,8 @@
 body {
   position: relative;
   font-family: "Kanit", sans-serif;
+  background-image: url("./images/Group 22.svg");
+  background-repeat: no-repeat;
 }
 
 main nav {
