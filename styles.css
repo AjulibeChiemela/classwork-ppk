@@ -12,6 +12,10 @@ body {
   background-repeat: no-repeat;
 }
 
+body.home-body {
+  overflow-y: hidden;
+}
+
 body a {
   text-decoration: none;
 }
@@ -50,7 +54,7 @@ main .hero {
 
 main .hero div {
   width: 50%;
-  margin: 15% 2%;
+  margin: 12% 2%;
 }
 
 main .hero div.hero-text {
@@ -64,7 +68,7 @@ main .hero div.hero-text h1 {
   color: #043e0a;
   width: 72%;
   position: relative;
-  margin-top: 5%;
+  margin-top: 3%;
 }
 
 main .hero div.hero-text h1 .to {
@@ -72,6 +76,7 @@ main .hero div.hero-text h1 .to {
   bottom: 14px;
   right: 1%;
   background-color: #069a06;
+  color: #fff;
   font-size: 2rem;
   padding: 1% 2.5%;
   border-radius: 45%;

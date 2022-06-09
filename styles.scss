@@ -9,6 +9,10 @@ body {
   font-family: "Kanit", sans-serif;
   background-image: url("./images/Group\ 22.svg");
   background-repeat: no-repeat;
+  &.home-body {
+    overflow-y: hidden;
+  }
+
   a {
     text-decoration: none;
   }
@@ -35,7 +39,7 @@ main {
     display: flex;
     div {
       width: 50%;
-      margin: 15% 2%;
+      margin: 12% 2%;
       &.hero-text {
         text-align: left;
         padding-left: 3%;
@@ -45,12 +49,13 @@ main {
           color: #043e0a;
           width: 72%;
           position: relative;
-          margin-top: 5%;
+          margin-top: 3%;
           .to {
             position: absolute;
             bottom: 14px;
             right: 1%;
             background-color: #069a06;
+            color: #fff;
             font-size: 2rem;
             padding: 1% 2.5%;
             border-radius: 45%;
