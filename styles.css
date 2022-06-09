@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  font-family: "Kanit", sans-serif;
+}
+
+main nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+main nav a {
+  text-decoration: none;
+  color: #069a06;
+  margin: 1% 3%;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+main .hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .hero div {
+  width: 50%;
+  margin: 15% 2%;
+}
+
+main .hero div.hero-text {
+  text-align: left;
+  padding-left: 3%;
+}
+
+main .hero div.hero-text h1 {
+  font-size: 6rem;
+  font-weight: 600;
+  color: #043e0a;
+  width: 72%;
+  position: relative;
+  margin-top: 5%;
+}
+
+main .hero div.hero-text h1 .to {
+  position: absolute;
+  bottom: 14px;
+  right: 1%;
+  background-color: #069a06;
+  font-size: 2rem;
+  padding: 1% 2.5%;
+  border-radius: 45%;
+}
+
+main .hero div.hero-text .welcome-text {
+  font-size: 2.7rem;
+  font-weight: 400;
+  color: #069a06;
+  margin-top: -3%;
+}
+
+main .hero div.hero-text .discount-text {
+  font-size: 1.5rem;
+  margin-block: 1%;
+  font-weight: 300;
+}
+
+main .hero div.hero-text .discount-text.d-t-2 {
+  margin-bottom: 7%;
+}
+
+main .hero div.hero-text .discount-text .s-d {
+  color: #069a06;
+  font-weight: 400;
+}
+
+main .hero div.hero-text a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  background-color: #069a06;
+  border-radius: 10px;
+  padding: 3% 7%;
+  color: #fff;
+}
+
+main .hero .float {
+  position: absolute;
+}
+
+main .hero .float.v-1 {
+  width: 20rem;
+  top: 0;
+}
+
+main .hero .float.v-2 {
+  bottom: 0;
+  width: 100%;
+}
+/*# sourceMappingURL=styles.css.map */

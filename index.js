@@ -87,6 +87,7 @@ if (visitorsName !== null) {
   if (isNaN(Number(visitorsName))) {
     if (confirmStatus === true) {
       alert("Name Accepted!!");
+      alert(`Welcome ${visitorsName} !!`);
     } else {
       alert(`Welcome back ${visitorsName} !!`);
     }
