@@ -1,8 +1,15 @@
 function displayTicket() {
   document.getElementById("ticket").style.display = "block";
 }
+function displayCancelMessage() {
+  document.getElementById("cancel").style.display = "flex";
+}
 function removeTicketLanding() {
   document.getElementById("ticket-landing").style.display = "none";
+}
+function youCancelled() {
+  displayCancelMessage();
+  removeTicketLanding();
 }
 
 function getTicket() {
@@ -29,14 +36,16 @@ function getTicket() {
     getAge();
     //confirm that the age prompt is not left empty or filled with a string
     if (age === null) {
-      alert("You Cancelled!!");
+      // alert("You Cancelled!!");
+      youCancelled();
     }
     if (age !== null) {
       while (age == 0 || isNaN(Number(age)) === true) {
         alert("Please enter a valid age");
         getAge();
         if (age === null) {
-          alert("You Cancelled!!");
+          // alert("You Cancelled!!");
+          youCancelled();
           break;
         }
       }
@@ -79,7 +88,6 @@ function getTicket() {
             `Our Current Price is ${price} naira; but you have a discount of ${discount}. You are to pay only ${newPrice} naira`
           );
         }
-        // document.body.style.backgroundColor = "red";
         displayTicket();
         document.querySelector(".name").textContent = `NAME: ${visitorsName}`;
         document.querySelector(".age").textContent = `AGE: ${age}`;
@@ -97,7 +105,8 @@ function getTicket() {
 
   //confirm that the name prompt is not left empty or filled with a number
   if (visitorsName === null) {
-    alert("You Cancelled!!");
+    // alert("You Cancelled!!");
+    youCancelled();
   }
   if (visitorsName !== null) {
     if (isNaN(Number(visitorsName))) {
@@ -115,7 +124,8 @@ function getTicket() {
         getName();
         //enables cancellation even if user has tried inputing name severally
         if (visitorsName === null) {
-          alert("You Cancelled!!");
+          // alert("You Cancelled!!");
+          youCancelled();
           break;
         }
       }

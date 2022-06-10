@@ -216,4 +216,38 @@ main .hero .float.v-2 {
   position: relative;
   left: 45%;
 }
+
+.tkt-body #cancel {
+  display: none;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-inline: 5%;
+}
+
+.tkt-body #cancel div {
+  margin-top: 5%;
+}
+
+.tkt-body #cancel div.cancel-img {
+  width: 30%;
+}
+
+.tkt-body #cancel div.cancel-txt {
+  padding-top: 7%;
+  width: 70%;
+  text-align: center;
+}
+
+.tkt-body #cancel div.cancel-txt div {
+  margin-bottom: 5%;
+}
+
+.tkt-body #cancel div.cancel-txt div p {
+  font-size: 2rem;
+}
+
+.tkt-body #cancel div.cancel-txt .redo-quest {
+  padding: 2%;
+}
 /*# sourceMappingURL=styles.css.map */
