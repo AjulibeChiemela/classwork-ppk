@@ -81,17 +81,17 @@ function getTicket() {
           );
         } else if (newPrice === 0) {
           alert(
-            `Our Current Price is ${price} naira; but you have a discount of ${discount}. You do not have to pay!!!`
+            `Our Current Price is ₦${price}; but you have a discount of ${discount}. You do not have to pay!!!`
           );
         } else {
           alert(
-            `Our Current Price is ${price} naira; but you have a discount of ${discount}. You are to pay only ${newPrice} naira`
+            `Our Current Price is ₦${price}; but you have a discount of ${discount}. You are to pay only ₦${newPrice}`
           );
         }
         displayTicket();
         document.querySelector(".name").textContent = `NAME: ${visitorsName}`;
         document.querySelector(".age").textContent = `AGE: ${age}`;
-        document.querySelector(".price").textContent = `PRICE: ${newPrice}`;
+        document.querySelector(".price").textContent = `PRICE: ₦${newPrice}`;
         let ticketDate = new Date().toDateString();
         document.querySelector(".date").textContent = `DATE: ${ticketDate}`;
         removeTicketLanding();
