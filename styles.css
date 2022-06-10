@@ -178,17 +178,17 @@ main .hero .float.v-2 {
 }
 
 .tkt-body #ticket {
-  font-family: "Creepster", cursive;
   display: none;
 }
 
 .tkt-body #ticket h3 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   text-align: center;
   margin-top: 2%;
 }
 
 .tkt-body #ticket .tkt-div {
+  font-family: "Creepster", cursive;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -198,7 +198,7 @@ main .hero .float.v-2 {
   border-radius: 15px;
   padding: 2%;
   width: 70%;
-  margin: 3% auto;
+  margin: 2% auto;
 }
 
 .tkt-body #ticket .tkt-div .tkt-text {

@@ -135,21 +135,21 @@ main {
     }
   }
   #ticket {
-    font-family: "Creepster", cursive;
     display: none;
     h3 {
-      font-size: 3rem;
+      font-size: 2.5rem;
       text-align: center;
       margin-top: 2%;
     }
     .tkt-div {
+      font-family: "Creepster", cursive;
       display: flex;
       border: 2px solid #069a06;
       box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.25);
       border-radius: 15px;
       padding: 2%;
       width: 70%;
-      margin: 3% auto;
+      margin: 2% auto;
       .tkt-text {
         padding-top: 5%;
         p {
