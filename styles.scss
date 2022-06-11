@@ -137,7 +137,7 @@ main {
   #ticket {
     display: none;
     h3 {
-      font-size: 2.5rem;
+      font-size: 1.5rem;
       text-align: center;
       margin-top: 2%;
     }
@@ -147,15 +147,15 @@ main {
       border: 2px solid #069a06;
       box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.25);
       border-radius: 15px;
-      padding: 2%;
-      width: 70%;
+      padding: 1%;
+      width: 60%;
       margin: 2% auto;
       .tkt-text {
         padding-top: 5%;
         p {
-          font-size: 2.5rem;
+          font-size: 2rem;
           font-weight: 400;
-          margin-block: 5%;
+          padding-block: 7%;
         }
       }
     }
