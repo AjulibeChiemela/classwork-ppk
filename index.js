@@ -12,6 +12,24 @@ function youCancelled() {
   removeTicketLanding();
 }
 
+function getFromLS() {
+  let nameList;
+  names = localStorage.getItem("name");
+  if (names === null) {
+    nameList = [];
+  } else {
+    nameList = JSON.parse(names);
+  }
+  return nameList;
+}
+
+function saveToLS(visitorsName) {
+  let nameList = getFromLS();
+  nameList.push(visitorsName);
+
+  localStorage.setItem("name", JSON.stringify(nameList));
+}
+
 function getTicket() {
   alert("Welcome to our site. We're glad to have you");
   //New visitor or not??
@@ -99,6 +117,10 @@ function getTicket() {
 
       if (isNaN(Number(age)) !== true && age !== null) {
         getDiscount();
+        //name only saves if person is a new visitor, and if the person doesn't cancel
+        if (confirmStatus === true) {
+          saveToLS(visitorsName);
+        }
       }
     }
   }
@@ -112,11 +134,21 @@ function getTicket() {
     if (isNaN(Number(visitorsName))) {
       if (confirmStatus === true) {
         alert("Name Accepted!!");
-        alert(`Welcome ${visitorsName} !!`);
+        alert(`Welcome ${visitorsName.toUpperCase()} !!`);
+        runGetAge();
       } else {
-        alert(`Welcome back ${visitorsName} !!`);
+        let oldVisitors = getFromLS();
+        //search array gotten from local storage for old visitors name
+        if (oldVisitors.includes(visitorsName)) {
+          alert(`Welcome back ${visitorsName.toUpperCase()} !!`);
+          runGetAge();
+        } else {
+          alert(
+            `We've checked, but haven't found your name in our database.Kindly register again`
+          );
+        }
       }
-      runGetAge();
+      // runGetAge();
     } else {
       while (isNaN(Number(visitorsName)) === false) {
         //this runs for an empty string too, because an emty string converted to a number gives 0; hence isNaN returns false
@@ -130,6 +162,7 @@ function getTicket() {
         }
       }
       if (isNaN(Number(visitorsName)) !== false) {
+        alert("Name Accepted!!");
         runGetAge();
       }
     }
